@@ -14,19 +14,19 @@ def get_data(crypto):
     cur.close()
     conn.close()
 
-    return pd.DataFrame(data, columns=["date", "open", "close"])
+    # return pd.DataFrame(data, columns=["date", "open", "close"])
 
 
-# st.badge("Hello Trader", icon="🍉", color="violet")
+st.badge("Hello Trader", icon="🍉", color="violet")
 
-# option = st.selectbox(
-#     "Which Crypto would oyu like to know the price for?",
-#     ("BTC", "ETH", "SOL"),
-#     index=None
-# )
+option = st.selectbox(
+    "Which Crypto would oyu like to know the price for?",
+    ("BTC", "ETH", "SOL"),
+    index=None
+)
 
-# st.write("You selected: ", option)
+st.write("You selected: ", option)
 
-# if option != None:
-#     data = get_data(option)
-#     st.dataframe(data)
+if option != None:
+    data = get_data(option)
+    st.dataframe(data)
