@@ -1,3 +1,7 @@
 .env
 
 app/.streamlit/secrets.toml
+
+package/
+
+*.zip

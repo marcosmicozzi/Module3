@@ -19,3 +19,4 @@ def get_data(event, context):
 
         data = [weather_date, weather_city, weather_temp, weather_feels, weather_description]
         return data
+    
